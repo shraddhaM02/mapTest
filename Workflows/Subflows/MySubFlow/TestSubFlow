@@ -1,0 +1,115 @@
+{
+  "id": "yMwowcXdSZPbCPafDwDwr",
+  "name": "TestSubFlow",
+  "workflowName": "TestSubFlow",
+  "itemType": "workflow",
+  "appId": "SUxLOujSETFtUJDyGflyk",
+  "folderId": "JUTdmIbxquRBxgGceHUqC",
+  "type": "ORCHESTRATION",
+  "version": "0.0.1",
+  "steps": [
+    {
+      "id": "OWsMuNoStgykvoSwyMSzZ",
+      "stepName": "End",
+      "stepType": "END",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "End",
+        "activityGroup": "Common",
+        "activityType": "END",
+        "name": "End",
+        "sourceSchemas": [
+          "NGuOXujjhFaFMoFRRfatx"
+        ],
+        "targetSchema": "SBVEtHpmIQtsQlebkHXWW"
+      }
+    },
+    {
+      "id": "NGuOXujjhFaFMoFRRfatx",
+      "stepName": "Start",
+      "stepType": "EVENT_SOURCE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "Start",
+        "activityGroup": "Common",
+        "activityType": "EVENT_SOURCE",
+        "output": "SBVEtHpmIQtsQlebkHXWW",
+        "name": "Start",
+        "sourceSchemas": []
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "initialEdge",
+      "from": "NGuOXujjhFaFMoFRRfatx",
+      "to": "OWsMuNoStgykvoSwyMSzZ",
+      "handleMap": {
+        "source": "NGuOXujjhFaFMoFRRfatx_1",
+        "target": "OWsMuNoStgykvoSwyMSzZ_1"
+      },
+      "name": "",
+      "description": "",
+      "type": "DEFAULT",
+      "lineType": "step",
+      "lineColor": "#8c8c8c"
+    }
+  ],
+  "diagram": {
+    "OWsMuNoStgykvoSwyMSzZ": {
+      "x": 512,
+      "y": 48,
+      "handles": [
+        {
+          "type": "source",
+          "position": "left",
+          "id": "OWsMuNoStgykvoSwyMSzZ_1"
+        }
+      ],
+      "sourcePosition": null,
+      "targetPosition": "left"
+    },
+    "NGuOXujjhFaFMoFRRfatx": {
+      "x": 16,
+      "y": 48,
+      "handles": [
+        {
+          "type": "source",
+          "position": "right",
+          "id": "NGuOXujjhFaFMoFRRfatx_1"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": null
+    }
+  },
+  "mappings": {
+    "OWsMuNoStgykvoSwyMSzZ": {
+      "metaInfo": {
+        "id": "OWsMuNoStgykvoSwyMSzZ",
+        "versionInfo": {
+          "version": "1.0.0"
+        },
+        "name": "End",
+        "description": ""
+      },
+      "mappings": {
+        "End": {
+          "name": "$.Start.name",
+          "age": "$.Start.age"
+        }
+      },
+      "attributes": {}
+    }
+  },
+  "notes": [],
+  "config": {
+    "name": "New Workflow"
+  }
+}

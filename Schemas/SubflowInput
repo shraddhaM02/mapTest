@@ -1,0 +1,16 @@
+{
+  "id": "SBVEtHpmIQtsQlebkHXWW",
+  "name": "SubflowInput",
+  "appId": "SUxLOujSETFtUJDyGflyk",
+  "folderId": "PKHcxofdfyGkrKZlyNDuv",
+  "content": {
+    "type": "json-schema",
+    "destination": "source",
+    "content": null,
+    "name": "SubflowInput",
+    "schemaSource": "file",
+    "reference": "$ref://schema-registry/SBVEtHpmIQtsQlebkHXWW"
+  },
+  "itemType": "appSchemas",
+  "gitEnabled": true
+}
